@@ -28,6 +28,7 @@ function getComputerChoice() {
             console.log(choiceText + SCISSOR)
             return SCISSOR;
         default:
+            console.log("Error in getComputerChoice function")
             break;
     }
 }
@@ -49,6 +50,7 @@ function getHumanChoice() {
             console.log(choiceText + SCISSOR)
             return SCISSOR;
         default:
+            console.log("Error in getHumanChoice function")
             break;
     }
 
@@ -100,6 +102,10 @@ function playRound(humanChoice, computerChoice) {
             } else {
                 console.log("It's a tie!")
             }
+            break;
+
+        default:
+            console.log("Error in playRound function")
             break;
     }
 }
