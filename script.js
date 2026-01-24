@@ -111,11 +111,11 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    while (currentRound <= MAX_ROUNDS) {
-        console.log(`Current round is ${currentRound}`)
-        playRound(getHumanChoice(), getComputerChoice());
-        ++currentRound;
-    }
+    // while (currentRound <= MAX_ROUNDS) {
+    //     console.log(`Current round is ${currentRound}`)
+    //     playRound(getHumanChoice(), getComputerChoice());
+    //     ++currentRound;
+    // }
 
     // Declare an overall winnder
     console.log("Human's final score = " + humanScore)
@@ -128,3 +128,27 @@ function playGame() {
         console.log("It's a tie! No one won!")
     }
 }
+
+// BUTTONS
+const buttonRock = document.querySelector("#rock");
+const buttonPaper = document.querySelector("#paper");
+const buttonScissor = document.querySelector("#scissor")
+
+// Results DIV
+const divResults = document.querySelector(".results");
+
+// Rock
+buttonRock.addEventListener("click", e => {
+    divResults.append(e.target.textContent);
+})
+
+// Paper
+buttonPaper.addEventListener("click", e => {
+    divResults.append(e.target.textContent);
+    console.log(e.target);
+})
+
+// Scissor
+buttonScissor.addEventListener("click", e => {
+    console.log(e.target);
+})

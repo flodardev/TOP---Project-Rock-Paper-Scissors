@@ -1,0 +1,25 @@
+.container.h1 {
+    border-style: solid;
+    border-color: black;
+
+    background-color: black;
+    color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container.buttons {
+    border-style: dotted;
+
+    padding: 2em;
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.button {
+    padding: 1em;
+    border-radius: 1em;
+}
