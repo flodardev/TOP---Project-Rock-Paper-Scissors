@@ -9,6 +9,8 @@
     justify-content: center;
 }
 
+/* Buttons */
+
 .container.buttons {
     border-style: dotted;
 
@@ -19,7 +21,67 @@
     gap: 1em;
 }
 
+/* Human's choice buttons */
 .button {
     padding: 1em;
     border-radius: 1em;
+}
+
+/* Round */
+.round {
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+
+    padding: 1em;
+}
+
+/* Container for results */
+
+.container.results {
+    border-style: dashed;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container.scores {
+    background-color: lightgrey;
+
+    width: 1000px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.human {
+    background-color: red;
+    text-align: center;
+
+    padding: 1em;
+}
+.computer {
+    background-color: blue;
+    text-align: center;
+
+    padding: 1em;
+}
+
+.container .announcement {
+    background-color: aquamarine;
+    border-style: groove;
+
+    height: 50px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
